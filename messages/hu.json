@@ -1,5 +1,18 @@
 {
     "Navbar" : {
-        "hello" : "Szia"
+        "home" : "FŐOLDAL",
+        "contact" : "KAPCSOLAT",
+        "about" : "RÓLUNK",
+        "login" : "Bejelentkezés"
+    },
+
+    "Hero" : {
+        "mainHero" : "Foglalj időpontot könnyedén",
+        "description" : "Az all-in-one időpontfoglaló platform vállalkozásoknak és szakembereknek. Hagyd, hogy ügyfeleid bármikor, 0–24-ben foglaljanak időpontot, te pedig arra koncentrálhass, ami igazán fontos."
+    },
+
+    "Button" : {
+        "start" : "Próbáld ki",
+        "watch" : "Demo megtekintése"
     }
 }

@@ -1,8 +1,23 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 :root {
-  --background: whitesmoke;
+  --background: #ffffff;
   --foreground: #171717;
+}
+
+@layer utilities {
+  .main-prop {
+    @apply flex flex-col items-center text-center;
+  }
+
+  .hero-prop {
+    @apply mt-30;
+  }
+
+  .animate {
+    @apply transition-all duration-300 hover:scale-105;
+  }
 }
 
 @theme inline {
@@ -14,7 +29,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: whitesmoke;
+    --background: #ffffff;
     --foreground: #171717;
   }
 }

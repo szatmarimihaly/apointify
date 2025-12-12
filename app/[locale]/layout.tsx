@@ -20,11 +20,14 @@ export default async function LocaleLayout({ children, params } : { children : R
     return(
         <html lang={locale} >
 
-            <header>
-                <Navbar />
-            </header>
+            
             <body>
                 <NextIntlClientProvider locale={locale as Locale} messages={messages}>
+
+                    <header>
+                        <Navbar locale={locale}/>
+                    </header>
+                    
                     {children}
                 </NextIntlClientProvider>
             </body>

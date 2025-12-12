@@ -1,5 +1,18 @@
 {
     "Navbar" : {
-        "hello" : "Hey"
+        "home" : "HOME",
+        "contact" : "CONTACT",
+        "about" : "ABOUT",
+        "login" : "Login"
+    },
+
+    "Hero" : {
+        "mainHero" : "Schedule appointments effortlessly",
+        "description" : "The all-in-one booking platform for businesses and professionals. Let your clients book appointments 24/7 while you focus on what matters."
+    },
+
+    "Button" : {
+        "start" : "Start for Free",
+        "watch" : "Watch Demo"
     }
 }
