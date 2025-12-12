@@ -3,7 +3,7 @@
         "home" : "HOME",
         "contact" : "CONTACT",
         "about" : "ABOUT",
-        "login" : "Login"
+        "login" : "Dashboard"
     },
 
     "Hero" : {
@@ -14,5 +14,21 @@
     "Button" : {
         "start" : "Start for Free",
         "watch" : "Watch Demo"
+    },
+
+    "Form" : {
+        "h1" : "Sign Up to Appointify",
+        "h11" : "Sign In to Appointify",
+        "description1" : "Login to you Appointify account to continue.",
+        "description" : "Create your account to continue.",
+        "username" : "Username",
+        "email" : "appointify@info.com",
+        "password" : "Password",
+        "signup" : "Sign Up",
+        "signin" : "Sign In",
+        "accountyes" : "Don't have an account?",
+        "accountno" : "Already have an account?",
+        "accountcreate" : "Create an account",
+        "accountlogin" : "Login"
     }
 }

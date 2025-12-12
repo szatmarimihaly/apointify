@@ -3,7 +3,7 @@
         "home" : "FŐOLDAL",
         "contact" : "KAPCSOLAT",
         "about" : "RÓLUNK",
-        "login" : "Bejelentkezés"
+        "login" : "Dashboard"
     },
 
     "Hero" : {
@@ -14,5 +14,21 @@
     "Button" : {
         "start" : "Próbáld ki",
         "watch" : "Demo megtekintése"
+    },
+
+    "Form" : {
+        "h1" : "Appointify regisztráció",
+        "h11" : "Jelentkezz be",
+        "description1" : "Lépj be Appointify fiókodba a folytatáshoz",
+        "description" : "Folyatatáshoz hozza létre fiókját.",
+        "username" : "Felhasználónév",
+        "email" : "appointify@info.com",
+        "password" : "Jelszó",
+        "signup" : "Regisztráció",
+        "signin" : "Bejelentkezés",
+        "accountyes" : "Nincs még fiókod?",
+        "accountno" : "Van már fiókod?",
+        "accountcreate" : "Létrehozás",
+        "accountlogin" : "Bejelentkezés"
     }
 }

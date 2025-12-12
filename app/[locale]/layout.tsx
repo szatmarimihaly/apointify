@@ -3,7 +3,6 @@ import { routing } from "@/i18n/routing"
 import type { ReactNode } from "react"
 import { NextIntlClientProvider } from "next-intl"
 import "../globals.css"
-import Navbar from "@/components/ui/Navbar"
 
 type Locale = (typeof routing.locales)[number];
 
@@ -23,11 +22,6 @@ export default async function LocaleLayout({ children, params } : { children : R
             
             <body>
                 <NextIntlClientProvider locale={locale as Locale} messages={messages}>
-
-                    <header>
-                        <Navbar locale={locale}/>
-                    </header>
-                    
                     {children}
                 </NextIntlClientProvider>
             </body>

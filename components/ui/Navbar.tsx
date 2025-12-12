@@ -9,6 +9,7 @@ import Link from "next/link"
 import { useTranslations } from "next-intl"
 import { usePathname } from "next/navigation"
 import Purple from "../Button/Purple";
+import SignButton from "../Button/SignButton";
 
 const SUPPORTED_LOCALES = ['en', 'hu']
 
@@ -79,7 +80,7 @@ const Navbar = ({ locale } : Props ) => {
             </div>
 
             <div className="flex items-center gap-4">
-              <Purple text={t('login')} locale={locale} href={`sign-in`}/>
+              <SignButton text={t('login')} locale={locale} href={`dashboard`}/>
               <LanguageSwitcher/>
             </div>
           </div>
@@ -93,6 +94,8 @@ const Navbar = ({ locale } : Props ) => {
               <Link href="." className={getLinkClass('/rolunk')} onClick={() => setIsOpen(false)}>
                 {t('about')}
               </Link>
+
+              <Purple text={t('login')} locale={locale} href={`dashboard`}/>
             </div>
           )}
         </div>
