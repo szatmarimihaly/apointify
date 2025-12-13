@@ -1,3 +1,4 @@
+import AdminNav from "@/components/ui/AdminNav";
 import { auth } from "@/lib/auth"
 import { headers } from "next/headers"  
 import { redirect } from "next/navigation" 
@@ -19,5 +20,12 @@ export default async function ProtectedLayout({ children, params } : Props){
         redirect(`/${locale}/sign-in`)
     }
 
-    return <>{children}</>
+    return (
+        <>
+            <header>
+                <AdminNav locale={locale} user={session.user} />
+            </header>
+            {children}
+        </>
+    )
 }

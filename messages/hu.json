@@ -3,11 +3,12 @@
         "home" : "FŐOLDAL",
         "contact" : "KAPCSOLAT",
         "about" : "RÓLUNK",
-        "login" : "Dashboard"
+        "login" : "Dashboard",
+        "logout" : "Kilépés"
     },
 
     "Hero" : {
-        "mainHero" : "Foglalj időpontot könnyedén",
+        "mainHero" : "Foglalj időpontot hatékonyan",
         "description" : "Az all-in-one időpontfoglaló platform vállalkozásoknak és szakembereknek. Hagyd, hogy ügyfeleid bármikor, 0–24-ben foglaljanak időpontot, te pedig arra koncentrálhass, ami igazán fontos."
     },
 
@@ -30,5 +31,26 @@
         "accountno" : "Van már fiókod?",
         "accountcreate" : "Létrehozás",
         "accountlogin" : "Bejelentkezés"
+    },
+
+    "ProfileCard": [
+    {
+      "id": 1,
+      "title": "Időpontjaid",
+      "description": "Itt láthatod az időpontjaidat a következő menüben.",
+      "href": "/dashboard/appointments"
+    },
+    {
+      "id": 2,
+      "title": "Cég Adatok",
+      "description": "Itt láthatod a céged adatait és módosításokat végezhetsz.",
+      "href": "/dashboard/company"
+    },
+    {
+      "id": 3,
+      "title": "Cég Adatok",
+      "description": "Itt láthatod a céged adatait és módosításokat végezhetsz.",
+      "href": "/dashboard/company"
     }
+  ]
 }

@@ -3,6 +3,12 @@ import { routing } from "@/i18n/routing"
 import type { ReactNode } from "react"
 import { NextIntlClientProvider } from "next-intl"
 import "../globals.css"
+import { Geologica } from "next/font/google"
+
+const geologica = Geologica({
+    subsets : ['latin'],
+    display : 'swap'
+})
 
 type Locale = (typeof routing.locales)[number];
 
@@ -17,10 +23,8 @@ export default async function LocaleLayout({ children, params } : { children : R
     const messages = (await import(`../../messages/${locale}.json`)).default;
 
     return(
-        <html lang={locale} >
-
-            
-            <body>
+        <html lang={locale}>
+            <body className={geologica.className}>
                 <NextIntlClientProvider locale={locale as Locale} messages={messages}>
                     {children}
                 </NextIntlClientProvider>

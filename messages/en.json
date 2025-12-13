@@ -3,7 +3,8 @@
         "home" : "HOME",
         "contact" : "CONTACT",
         "about" : "ABOUT",
-        "login" : "Dashboard"
+        "login" : "Dashboard",
+        "logout" : "Sign out"
     },
 
     "Hero" : {
@@ -30,5 +31,26 @@
         "accountno" : "Already have an account?",
         "accountcreate" : "Create an account",
         "accountlogin" : "Login"
-    }
+    },
+
+    "ProfileCard" : [
+        {
+            "id" : 1,
+            "title" : "Your Appointments",
+            "description" : "Here you can see all of your appointments in the following menu.",
+            "href" : "/dashbooard/appointments"
+        },
+        {
+            "id" : 2,
+            "title" : "Company Data",
+            "description" : "Here you can see your details of your compnay and make changes.",
+            "href" : "/dashbooard/company"
+        },
+        {
+            "id" : 3,
+            "title" : "Company Data",
+            "description" : "Here you can see your details of your compnay and make changes.",
+            "href" : "/dashbooard/company"
+        }
+    ]
 }

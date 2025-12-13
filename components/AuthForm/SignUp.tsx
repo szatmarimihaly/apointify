@@ -20,7 +20,13 @@ const SignUp = ({ locale } : Props) => {
     const [loading, setLoading] = useState(false);
 
     const router = useRouter();
-    const t = useTranslations("Form")
+    const t = useTranslations("Form");
+
+    const generateAvatar =(email : string) => {
+        const style = "avataaars";
+        const seed = encodeURIComponent(email);
+        return `https://api.dicebear.com/7.x/${style}/svg?seed=${seed}`;
+    }
 
     const handleSubmit = async (e : React.FormEvent) => {
         e.preventDefault();
@@ -34,10 +40,14 @@ const SignUp = ({ locale } : Props) => {
         }
 
         try{
+
+            const avatarUrl = generateAvatar(email);
+
             await signUp.email({
                 email,
                 password,
                 name,
+                image : avatarUrl,
                 callbackURL : `/${locale}/dashboard`
             });
             router.push(`/${locale}/dashboard`)
