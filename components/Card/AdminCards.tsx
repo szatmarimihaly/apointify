@@ -31,7 +31,7 @@ export default async function AdminCards({ locale, text } : Props) {
                     <h3 className="text-start text-2xl font-semibold">{item.title}</h3>
                     <p className="text-start text-gray-700">{item.description}</p>
                     <div className="w-full flex justify-end mt-10">
-                        <NavigateCat locale={locale}/>
+                        <NavigateCat href={`/${locale}${item.href}`}/>
                     </div>
                 </div>
             )

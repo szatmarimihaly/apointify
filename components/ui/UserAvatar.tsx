@@ -13,6 +13,13 @@ const sizeClasses = {
     xl : "w-24 h-24 text-2xl"
 };
 
+const sizePixels = {
+    sm: 32,
+    md: 48,
+    lg: 64,
+    xl: 96
+};
+
 export default function UserAvatar({ src, name, size = "md" } : Props) {
     const initials = name
         .split(' ')
@@ -26,8 +33,9 @@ export default function UserAvatar({ src, name, size = "md" } : Props) {
             <Image
                 src={src}
                 alt={name}
-                width={size === "sm" ? 32 : size === "md" ? 48 : size === "lg" ? 64 : 96}
-                height={size === "sm" ? 32 : size === "md" ? 48 : size === "lg" ? 64 : 96}
+                width={sizePixels[size]}
+                height={sizePixels[size]}
+                className={`${sizeClasses[size]} rounded-full object-cover`}
                 unoptimized
             />
         )

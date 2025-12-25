@@ -48,9 +48,9 @@
         },
         {
             "id" : 3,
-            "title" : "Company Data",
-            "description" : "Here you can see your details of your compnay and make changes.",
-            "href" : "/dashbooard/company"
+            "title" : "Services",
+            "description" : "Here you can see your services and make changes, or add new services.",
+            "href" : "/dashbooard/services"
         }
     ]
 }

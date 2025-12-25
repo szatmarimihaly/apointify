@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation"
 import Link from "next/link"
 import Spinner from "../ui/Spinner"
 import { useTranslations } from "next-intl"
+import { generateAvatar } from "@/utils/profile/avatarUtils"
 
 type Props = {
     locale : string
@@ -22,12 +23,6 @@ const SignUp = ({ locale } : Props) => {
     const router = useRouter();
     const t = useTranslations("Form");
 
-    const generateAvatar =(email : string) => {
-        const style = "avataaars";
-        const seed = encodeURIComponent(email);
-        return `https://api.dicebear.com/7.x/${style}/svg?seed=${seed}`;
-    }
-
     const handleSubmit = async (e : React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
@@ -41,7 +36,7 @@ const SignUp = ({ locale } : Props) => {
 
         try{
 
-            const avatarUrl = generateAvatar(email);
+            const avatarUrl = generateAvatar(name, email);
 
             await signUp.email({
                 email,

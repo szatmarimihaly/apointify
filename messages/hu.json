@@ -48,9 +48,9 @@
     },
     {
       "id": 3,
-      "title": "Cég Adatok",
-      "description": "Itt láthatod a céged adatait és módosításokat végezhetsz.",
-      "href": "/dashboard/company"
+      "title": "Szolgáltatások",
+      "description": "Itt láthatod a szolgáltatásaid, változtathatsz rajtuk, vagy újat hozhatsz létre.",
+      "href": "/dashboard/services"
     }
   ]
 }
