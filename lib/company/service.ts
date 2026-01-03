@@ -5,7 +5,7 @@ import { slugifyCompanyName } from "@/utils/db/slugify";
 
 export const COMPANY_TIMEZONE = "Europe/Budapest";
 
-type CreateCompanyInput = {
+type CompanyData = {
   name: string;
   description?: string;
   email: string;
@@ -14,7 +14,7 @@ type CreateCompanyInput = {
 
 export async function createCompanyForUser(
   userId: string,
-  data: CreateCompanyInput
+  data: CompanyData
 ) {
   const existing = await db.query.company.findFirst({
     where: eq(company.ownerUserId, userId),
@@ -39,4 +39,14 @@ export async function createCompanyForUser(
 
 export async function deleteCompanyForUser(userId: string) {
   await db.delete(company).where(eq(company.ownerUserId, userId));
+}
+
+export async function updateCompanyForUser(userId : string, data : CompanyData) {
+  await db.update(company).set({
+    name : data.name,
+    description : data.description,
+    email : data.email,
+    phone : data.phone,
+    updatedAt : new Date()
+  }).where(eq(company.ownerUserId, userId));
 }

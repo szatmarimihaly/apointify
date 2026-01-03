@@ -40,7 +40,7 @@ export default async function Page ({ params } : Props) {
 
   return(
     <div className="flex justify-center pt-10">
-      <CompanyCard company={existingCompany} text={t("CreateCompanyButton.deleteText")} />
+      <CompanyCard company={existingCompany} text={t("CreateCompanyButton.deleteText")} edittext={t("CreateCompanyButton.editText")}/>
     </div>
   )
   

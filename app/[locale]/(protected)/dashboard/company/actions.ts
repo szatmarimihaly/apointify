@@ -2,16 +2,16 @@
 
 import { redirect } from "next/navigation"
 import { getCurrentUser } from "@/lib/auth/getCurrentUser"
-import { deleteCompanyForUser, createCompanyForUser } from "@/lib/company/service"
+import { deleteCompanyForUser, createCompanyForUser, updateCompanyForUser } from "@/lib/company/service"
 
-type CreateCompanyInput = {
+type CompanyData = {
   name : string,
   description ?: string,
   email : string,
   phone ?: string
 }
 
-export async function createCompany(data: CreateCompanyInput) {
+export async function createCompany(data: CompanyData) {
   const user = await getCurrentUser();
 
   await createCompanyForUser(user.id, data);
@@ -23,6 +23,14 @@ export async function deleteCompany() {
   const user = await getCurrentUser();
 
   await deleteCompanyForUser(user.id);
+
+  redirect("/hu/dashboard/company");
+}
+
+export async function updateCompany(data: CompanyData) {
+  const user = await getCurrentUser();
+
+  await updateCompanyForUser(user.id, data);
 
   redirect("/hu/dashboard/company");
 }

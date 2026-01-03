@@ -42,7 +42,7 @@ export default function CreateCompanyModal({ onClose } : Props) {
             <div
                 ref={modalRef}
                 onClick={(e) => e.stopPropagation()}
-                className="w-full max-w-lg rounded-2xl bg-white p-6 shadow-xl"
+                className="w-full max-w-lg rounded-2xl bg-white p-6 shadow-xl mx-2"
             >
                 <h2 className="text-xl font-semibold mb-1">Create company</h2>
                 <p className="text-sm text-gray-500 mb-6">
