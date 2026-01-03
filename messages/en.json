@@ -52,5 +52,10 @@
             "description" : "Here you can see your services and make changes, or add new services.",
             "href" : "/dashbooard/services"
         }
-    ]
+    ],
+
+    "CreateCompanyButton" : {
+        "buttonText" : "Create Company",
+        "deleteText" : "Delete Company"
+    }
 }

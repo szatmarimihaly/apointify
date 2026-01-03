@@ -1,6 +1,6 @@
 {
-  "id": "cbee6e48-6b62-424a-bdd8-2b4a1db3ab52",
-  "prevId": "e31ba90b-96f3-4abc-8798-4ea9b921b9a1",
+  "id": "eff31a71-bb9c-49e3-b368-b0eb351ebcdb",
+  "prevId": "296a0913-06fe-432f-9f24-85dbc8cd5b2a",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -388,6 +388,12 @@
           "primaryKey": false,
           "notNull": true
         },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
         "email": {
           "name": "email",
           "type": "text",
@@ -396,6 +402,12 @@
         },
         "phone": {
           "name": "phone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "image_url": {
+          "name": "image_url",
           "type": "text",
           "primaryKey": false,
           "notNull": false

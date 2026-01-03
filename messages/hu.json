@@ -52,5 +52,10 @@
       "description": "Itt láthatod a szolgáltatásaid, változtathatsz rajtuk, vagy újat hozhatsz létre.",
       "href": "/dashboard/services"
     }
-  ]
+  ],
+
+  "CreateCompanyButton" : {
+    "buttonText" : "Cég létrehozása",
+    "deleteText" : "Cég törlése"
+  }
 }

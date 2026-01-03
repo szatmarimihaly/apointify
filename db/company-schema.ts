@@ -10,8 +10,10 @@ export const company = pgTable("company", {
 
     name: text("name").notNull(),
     slug: text("slug").notNull(),
+    description: text("description"),
     email: text("email").notNull(),
     phone: text("phone"),
+    imageUrl: text("image_url"),
     
     timezone: text("timezone").notNull().default("Europe/Budapest"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow().notNull(),

@@ -1,0 +1,1 @@
+ALTER TABLE "company" ALTER COLUMN "description" DROP NOT NULL;
